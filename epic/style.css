@@ -31,6 +31,7 @@ h3 {
 
 ul {
 	list-style-position: inside;
+	text-decoration: underline;
 }
 
 body {

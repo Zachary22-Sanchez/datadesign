@@ -9,11 +9,12 @@
 
 <h1>Conceptual Model</h1>
 
-<img src="data-design-diagram.jpg" alt="data-design-diagram" align="left">
+<img src="ERD%20update.jpg" alt="data-design-diagram" align="center">
 
 <div align="center">
-	<ul><u><strong>user</strong></u></ul>
-	<li>userID (pk)</li>
+	<ul><u><strong>User</strong></u></ul>
+	<li>userId (pk)</li>
+	<li>userProfileId (fk)</li>
 	<li>userActivationToken</li>
 	<li>userEmail</li>
 	<li>userName</li>
@@ -21,9 +22,9 @@
 </div>
 
 <div align="center">
-	<ul><u><strong>review</strong></u></ul>
-	<li>reviewId (fk)</li>
-	<li>reviewUserId (pk)</li>
+	<ul><u><strong>Review</strong></u></ul>
+	<li>reviewId (pk)</li>
+	<li>reviewUserId (fk)</li>
 	<li>reviewContent</li>
 	<li>reviewDateTime</li>
 	<li>reviewLocation</li>
@@ -32,10 +33,9 @@
 </div>
 
 <div align="center">
-	<ul><u><strong>like</strong></u></ul>
-	<li>likeProfileId</li>
-	<li>likeUserId</li>
-	<li>likeReviewId</li>
+	<ul><u><strong>Like</strong></u></ul>
+	<li>likeUserId (fk) </li>
+	<li>likeReviewId (fk) </li>
 	<li>likeDateTime</li>
 </div>
 

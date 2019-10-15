@@ -9,7 +9,7 @@
 
 <h1>Conceptual Model</h1>
 
-<img src="ERD%20update.jpg" alt="data-design-diagram" align="center">
+<img src="ERD%202.jpg" alt="data-design-diagram" align="center">
 
 <div class="center">
 	<ul><u><strong>User</strong></u></ul>
@@ -27,7 +27,6 @@
 	<li>reviewContent</li>
 	<li>reviewDateTime</li>
 	<li>reviewLocation</li>
-	<li>reviewPhotos</li>
 	<li>reviewRating</li>
 </div>
 

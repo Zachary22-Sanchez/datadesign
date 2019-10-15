@@ -11,17 +11,16 @@
 
 <img src="ERD%20update.jpg" alt="data-design-diagram" align="center">
 
-<div align="center">
+<div class="center">
 	<ul><u><strong>User</strong></u></ul>
 	<li>userId (pk)</li>
-	<li>userProfileId (fk)</li>
 	<li>userActivationToken</li>
 	<li>userEmail</li>
 	<li>userName</li>
 	<li>userProfile</li>
 </div>
 
-<div align="center">
+<div class="center">
 	<ul><u><strong>Review</strong></u></ul>
 	<li>reviewId (pk)</li>
 	<li>reviewUserId (fk)</li>
@@ -32,8 +31,8 @@
 	<li>reviewRating</li>
 </div>
 
-<div align="center">
-	<ul><u><strong>Like</strong></u></ul>
+<div class="center">
+	<ul>Like</ul>
 	<li>likeUserId (fk) </li>
 	<li>likeReviewId (fk) </li>
 	<li>likeDateTime</li>

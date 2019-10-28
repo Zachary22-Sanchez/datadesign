@@ -27,8 +27,11 @@ create table `like` (
 	likeUserId binary(16) not null,
 	likeReviewId binary(16) not null,
 	likeDateTime datetime(6) not null,
-	foreign key (likeUserId) references user(userID),
-	foreign key (likeReviewId) references review(reviewId)
+	index (likeUserId),
+	index (likeReviewId),
+	foreign key (likeUserId) references user(userId),
+	foreign key (likeReviewId) references review(reviewId),
+	primary key (likeUserId, likeReviewId)
 );
 
 
